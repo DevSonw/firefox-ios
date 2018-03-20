@@ -137,9 +137,6 @@ class DragAndDropTests: BaseTestCase {
     }
 
     func testDragAndDropHomeTabTabsTray() {
-        // HomeTab in Tab Tray does not have any label, so this is the way to access it
-        //let homeTab = app.collectionViews.cells.element(boundBy: 0)
-
         navigator.openNewURL(urlString: secondWebsite["url"]!)
         waitUntilPageLoad()
         navigator.goto(TabTray)
